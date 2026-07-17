@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Paco app: privacy policy and account deletion information.">
+  <title>Paco – Privacy e assistenza</title>
+  <style>
+    :root{
+      color-scheme:light dark;
+      --bg:#f6f7fb;--card:#fff;--text:#1f2937;--muted:#667085;
+      --accent:#2f6fed;--border:#dfe4ec
+    }
+    @media(prefers-color-scheme:dark){
+      :root{--bg:#111827;--card:#1f2937;--text:#f3f4f6;--muted:#c4cad4;--border:#374151}
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;min-height:100vh;display:grid;place-items:center;
+      padding:24px;background:var(--bg);color:var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif
+    }
+    main{
+      width:min(720px,100%);background:var(--card);border:1px solid var(--border);
+      border-radius:20px;padding:32px;box-shadow:0 10px 35px rgba(0,0,0,.07)
+    }
+    h1{font-size:clamp(2rem,6vw,3.2rem);margin:0 0 8px}
+    p{line-height:1.6;color:var(--muted)}
+    nav{display:grid;gap:12px;margin-top:28px}
+    a{
+      display:block;text-decoration:none;color:white;background:var(--accent);
+      padding:15px 18px;border-radius:13px;font-weight:700
+    }
+    footer{margin-top:28px;color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Paco</h1>
+    <p>Informazioni legali e assistenza per l’app di apprendimento linguistico Paco.</p>
+    <nav>
+      <a href="paco-privacy-policy.html">Privacy Policy</a>
+      <a href="paco-delete-account.html">Eliminazione account e dati</a>
+    </nav>
+    <footer>
+      Assistenza: <a href="mailto:pacoapp.support@gmail.com" style="display:inline;background:none;color:inherit;padding:0;font-weight:600">pacoapp.support@gmail.com</a>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Request deletion of a Paco account and its associated data.">
+<title>Paco – Delete Account</title>
+<style>
+:root{
+  color-scheme: light dark;
+  --bg:#f6f7fb; --card:#ffffff; --text:#1f2937; --muted:#5f6b7a;
+  --accent:#2f6fed; --border:#dfe4ec; --soft:#eef4ff;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#111827;--card:#1f2937;--text:#f3f4f6;--muted:#c4cad4;--border:#374151;--soft:#172554}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+main{max-width:900px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+h1{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.2;margin:0 0 8px}
+h2{font-size:1.3rem;margin:28px 0 8px}
+p,li{font-size:1rem}
+.muted{color:var(--muted)}
+.langbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.langbar button{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:999px;padding:8px 14px;cursor:pointer;font-weight:600}
+.langbar button.active{background:var(--accent);color:white;border-color:var(--accent)}
+.panel{display:none}.panel.active{display:block}
+.notice{background:var(--soft);border-left:4px solid var(--accent);padding:14px 16px;border-radius:10px}
+a{color:var(--accent)}
+.button{display:inline-block;background:var(--accent);color:white;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:12px;margin:8px 0}
+footer{margin-top:24px;color:var(--muted);font-size:.9rem}
+code{overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<main>
+  <div class="langbar" aria-label="Language">
+    <button type="button" data-lang-btn="en">English</button>
+    <button type="button" data-lang-btn="it">Italiano</button>
+    <button type="button" data-lang-btn="es">Español</button>
+  </div>
+
+  <article class="card">
+    <section class="panel" data-lang-panel="en">
+      <h1>Delete your Paco account</h1>
+      <p>This page explains how to request deletion of your Paco account and the cloud data associated with it.</p>
+
+      <h2>Delete directly in the app</h2>
+      <ol>
+        <li>Open Paco and sign in to the account you want to delete.</li>
+        <li>Open <strong>Settings</strong> and go to the account section.</li>
+        <li>Select <strong>Delete account</strong> and confirm the request.</li>
+      </ol>
+
+      <h2>Request deletion by email</h2>
+      <p>If you no longer have access to the app, send a request from the email address connected to the Paco account.</p>
+      <p><a class="button" href="mailto:pacoapp.support@gmail.com?subject=Paco%20account%20deletion%20request&body=Hello%2C%0A%0AI%20request%20the%20deletion%20of%20my%20Paco%20account%20and%20associated%20cloud%20data.%0A%0AEmail%20address%20used%20for%20Paco%3A%20%0A%0AThank%20you.">Send deletion request</a></p>
+      <p class="notice"><strong>Do not send your password.</strong> Support may ask for reasonable verification to prevent unauthorized deletion.</p>
+
+      <h2>Data deleted</h2>
+      <ul>
+        <li>Paco authentication account;</li>
+        <li>cloud backups associated with the account, including progress, statistics, settings, collection and Garden of Mistakes data.</li>
+      </ul>
+
+      <h2>Data stored only on the device</h2>
+      <p>Local data can be removed by clearing Paco’s app data or uninstalling the app. A remote request cannot erase information that exists only on your device.</p>
+
+      <h2>Retention and completion</h2>
+      <p>Deletion requests are handled as soon as reasonably possible. Limited information may be retained where necessary for security, fraud prevention, legal obligations or dispute resolution.</p>
+
+      <h2>Contact</h2>
+      <p><a href="mailto:pacoapp.support@gmail.com">pacoapp.support@gmail.com</a></p>
+    </section>
+
+    <section class="panel" data-lang-panel="it">
+      <h1>Elimina il tuo account Paco</h1>
+      <p>Questa pagina spiega come richiedere l’eliminazione dell’account Paco e dei dati cloud associati.</p>
+
+      <h2>Eliminazione direttamente nell’app</h2>
+      <ol>
+        <li>Apri Paco e accedi all’account che vuoi eliminare.</li>
+        <li>Apri <strong>Impostazioni</strong> e vai alla sezione dell’account.</li>
+        <li>Seleziona <strong>Elimina account</strong> e conferma la richiesta.</li>
+      </ol>
+
+      <h2>Richiesta tramite email</h2>
+      <p>Se non hai più accesso all’app, invia la richiesta dall’indirizzo email associato all’account Paco.</p>
+      <p><a class="button" href="mailto:pacoapp.support@gmail.com?subject=Richiesta%20eliminazione%20account%20Paco&body=Buongiorno%2C%0A%0Achiedo%20l%27eliminazione%20del%20mio%20account%20Paco%20e%20dei%20dati%20cloud%20associati.%0A%0AIndirizzo%20email%20utilizzato%20su%20Paco%3A%20%0A%0AGrazie.">Invia la richiesta di eliminazione</a></p>
+      <p class="notice"><strong>Non inviare la password.</strong> L’assistenza può chiedere una verifica ragionevole per evitare eliminazioni non autorizzate.</p>
+
+      <h2>Dati eliminati</h2>
+      <ul>
+        <li>account di autenticazione Paco;</li>
+        <li>backup cloud associati, inclusi progressi, statistiche, impostazioni, collezione e dati del Giardino degli errori.</li>
+      </ul>
+
+      <h2>Dati salvati soltanto sul dispositivo</h2>
+      <p>I dati locali possono essere rimossi cancellando i dati dell’app Paco o disinstallandola. Una richiesta remota non può cancellare informazioni presenti esclusivamente sul dispositivo.</p>
+
+      <h2>Tempi e conservazione limitata</h2>
+      <p>Le richieste vengono gestite appena ragionevolmente possibile. Alcune informazioni possono essere conservate in misura limitata per sicurezza, prevenzione delle frodi, obblighi legali o risoluzione di controversie.</p>
+
+      <h2>Contatti</h2>
+      <p><a href="mailto:pacoapp.support@gmail.com">pacoapp.support@gmail.com</a></p>
+    </section>
+
+    <section class="panel" data-lang-panel="es">
+      <h1>Elimina tu cuenta de Paco</h1>
+      <p>Esta página explica cómo solicitar la eliminación de tu cuenta de Paco y de los datos asociados almacenados en la nube.</p>
+
+      <h2>Eliminación directamente en la aplicación</h2>
+      <ol>
+        <li>Abre Paco e inicia sesión en la cuenta que deseas eliminar.</li>
+        <li>Abre <strong>Ajustes</strong> y entra en la sección de la cuenta.</li>
+        <li>Selecciona <strong>Eliminar cuenta</strong> y confirma la solicitud.</li>
+      </ol>
+
+      <h2>Solicitud por correo electrónico</h2>
+      <p>Si ya no tienes acceso a la aplicación, envía la solicitud desde la dirección de correo asociada a la cuenta de Paco.</p>
+      <p><a class="button" href="mailto:pacoapp.support@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20Paco&body=Hola%2C%0A%0ASolicito%20la%20eliminaci%C3%B3n%20de%20mi%20cuenta%20de%20Paco%20y%20de%20los%20datos%20asociados%20en%20la%20nube.%0A%0ADirecci%C3%B3n%20de%20correo%20utilizada%20en%20Paco%3A%20%0A%0AGracias.">Enviar solicitud de eliminación</a></p>
+      <p class="notice"><strong>No envíes tu contraseña.</strong> Soporte puede solicitar una verificación razonable para evitar eliminaciones no autorizadas.</p>
+
+      <h2>Datos eliminados</h2>
+      <ul>
+        <li>cuenta de autenticación de Paco;</li>
+        <li>copias de seguridad asociadas, incluidos progreso, estadísticas, ajustes, colección y datos del Jardín de errores.</li>
+      </ul>
+
+      <h2>Datos guardados únicamente en el dispositivo</h2>
+      <p>Los datos locales pueden eliminarse borrando los datos de Paco o desinstalando la aplicación. Una solicitud remota no puede borrar información que solo existe en tu dispositivo.</p>
+
+      <h2>Plazo y conservación limitada</h2>
+      <p>Las solicitudes se tramitan tan pronto como sea razonablemente posible. Parte de la información puede conservarse de forma limitada por seguridad, prevención del fraude, obligaciones legales o resolución de disputas.</p>
+
+      <h2>Contacto</h2>
+      <p><a href="mailto:pacoapp.support@gmail.com">pacoapp.support@gmail.com</a></p>
+    </section>
+
+    <footer>Paco · com.pacoapp.languages</footer>
+  </article>
+</main>
+
+<script>
+const buttons=[...document.querySelectorAll('[data-lang-btn]')];
+const panels=[...document.querySelectorAll('[data-lang-panel]')];
+function setLang(lang){
+  buttons.forEach(b=>b.classList.toggle('active',b.dataset.langBtn===lang));
+  panels.forEach(p=>p.classList.toggle('active',p.dataset.langPanel===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('pacoPolicyLang',lang);
+}
+buttons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.langBtn)));
+const saved=localStorage.getItem('pacoPolicyLang');
+const browser=(navigator.language||'en').slice(0,2);
+setLang(saved || (['it','es','en'].includes(browser)?browser:'en'));
+</script>
+
+</body>
+</html>
