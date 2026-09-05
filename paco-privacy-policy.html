@@ -44,7 +44,7 @@ code{overflow-wrap:anywhere}
   <article class="card">
     <section class="panel" data-lang-panel="en">
       <h1>Paco Privacy Policy</h1>
-      <p class="muted">Effective date: 4 September 2026</p>
+      <p class="muted">Effective date: 5 September 2026</p>
       <p>This Privacy Policy explains how the language-learning application <strong>Paco: Conjugate and Collect</strong> (“Paco”, “the app”) processes information when you use the Android or iOS version of the app.</p>
 
       <div class="notice"><strong>Platform note:</strong> email/password and Google sign-in are available on Android and iOS. Sign in with Apple is available only in the iOS version. Advertising and in-app purchase features may vary by platform and app version.</div>
@@ -63,13 +63,22 @@ code{overflow-wrap:anywhere}
       </ul>
       <p>Your learning/gameplay state is stored locally on your device. It is sent to Paco’s cloud backup only if you use an eligible Paco account and enable the cloud backup feature. Advertising services may process advertising/technical data even when you do not use a Paco account.</p>
 
-      <h2>2. Local storage and cloud backup</h2>
-      <p>Paco stores progress and settings locally on the device so the app can work normally. If you enable cloud backup, backup data is stored through Firebase and associated with your Paco account.</p>
+      <h2>2. Age bands and what changes for younger users</h2>
+      <p>Paco is used by people of different ages, <strong>including children</strong>. On Google Play the declared target audiences are 6&ndash;8, 9&ndash;12, 13&ndash;15, 16&ndash;17 and 18+.</p>
+      <p><strong>On iPhone and iPad, Paco asks Apple first.</strong> On systems that support it, the app uses Apple&rsquo;s Declared Age Range. It is the operating system that decides whether and how to ask: outside regions with age-assurance obligations, sharing the range is your choice, while where local law requires age assurance the range may be provided under those rules. In every case Paco receives <strong>an age range and never a date of birth</strong>, and uses only that range, for one purpose: to apply the treatment appropriate to your age band. Nothing is stored when the answer comes from Apple: Paco asks again at each launch, so if you or a parent update the age in the system settings, Paco picks up the change by itself. If your system does not support it, or the range is not shared, the app falls back to the question described next, exactly as on Android.</p>
+      <p>Where Apple does not provide the range &mdash; on Android, in a browser, on older systems, or when you decline &mdash; Paco asks for your <strong>year of birth only</strong>, never a full date. The year is used for a single purpose: to place you in one of three internal age bands (under 13, 13&ndash;17, or 18 and over). <strong>The year is stored on your device only.</strong> It is never transmitted to us or to any third party, it is not part of your saved learning data and it is not included in any backup. It is kept on the device for one reason: so that your age band updates by itself as you grow older &mdash; someone who answers at 17 is treated as an adult once the calculation reaches 18, without having to do anything. Because only the year is known, Paco applies the more protective band whenever the current year&rsquo;s birthday may not yet have passed.</p>
+      <p>You are asked once per installation. If you reinstall the app or clear its data you are asked again. The app does not offer a way to change the answer afterwards.</p>
+      <p><strong>Under 13 and 13&ndash;17 &mdash; account, cloud and Analytics stay switched off.</strong> No Paco account is created, not even an anonymous one; cloud backup and synchronization are not available; Firebase Analytics is neither started nor offered, so the analytics consent question is not shown at all. Advertising is displayed. As explained in section 6, Google&rsquo;s advertising technology still processes a limited set of technical and advertising data in order to serve those ads, even in these bands.</p>
+      <p><strong>18 and over.</strong> Account, cloud backup and optional analytics are available as described in the rest of this policy.</p>
+      <p><strong>Until the band is known, nothing leaves the device.</strong> While the question is on screen, Paco does not start advertising, authentication, cloud services or analytics.</p>
+
+      <h2>3. Local storage and cloud backup</h2>
+      <p>Paco stores progress and settings locally on the device so the app can work normally. If you enable cloud backup, backup data is stored through Firebase and associated with your Paco account. <strong>Cloud backup is available only to users in the 18-and-over band</strong> (see section 2); for everyone else the saved data exists only on the device.</p>
       <p>Cloud backup is optional. It can be disabled from the app. Disabling automatic backup does not automatically delete existing cloud copies; you can delete the cloud backup separately.</p>
       <p>When Paco detects that a cloud backup is older than the data on your device, the app displays an additional warning before allowing the older backup to replace the current state. Loading an older backup may remove progress or items obtained after that backup, including purchased consumable items.</p>
 
-      <h2>3. Why information is used and legal bases</h2>
-      <p>Depending on your location and applicable law, information is processed to provide features you request, based on your consent, for legitimate security/reliability interests, or where needed to comply with legal obligations.</p>
+      <h2>4. Why information is used and legal bases</h2>
+      <p>Depending on your location and applicable law, the legal basis differs by purpose. Where the EU General Data Protection Regulation applies, we rely on: <strong>performance of a contract</strong> for creating and authenticating an account, providing cloud backup and delivering or restoring purchases you have made; <strong>your consent</strong> for optional Firebase Analytics and for personalized advertising, which you can withdraw at any time; <strong>our legitimate interest</strong> in the security and reliability of the service for fraud prevention, abuse detection, diagnostics and service integrity; for advertising, <strong>your consent</strong> wherever the applicable law requires it &mdash; including where consent is needed to store or read information on your device, which can also apply to non-personalized advertising &mdash; and our legitimate interest in serving non-personalized advertising to fund a free app only where that basis is permitted; and <strong>compliance with a legal obligation</strong> where retention or disclosure is required by law. The purposes are:</p>
       <ul>
         <li>to create and authenticate your account;</li>
         <li>to save, synchronize and restore cloud backup data when you enable that feature;</li>
@@ -81,63 +90,68 @@ code{overflow-wrap:anywhere}
         <li>to answer support requests and resolve technical issues.</li>
       </ul>
 
-      <h2>4. Analytics choices</h2>
+      <h2>5. Analytics choices</h2>
       <p>Firebase Analytics is optional in Paco and is used only where the user has provided analytics consent. You can change this choice from the app settings. Paco does not use Firebase Analytics data for cross-app advertising or tracking.</p>
+      <p><strong>Firebase Analytics is not used at all for users under 18</strong> (see section 2): it is not initialized, no analytics data is collected, and the consent question is not presented.</p>
       <p>Your Firebase Analytics choice is separate from your advertising privacy choices. Declining optional Firebase Analytics does not by itself disable advertising.</p>
 
-      <h2>5. Advertising and advertising privacy choices</h2>
+      <h2>6. Advertising and advertising privacy choices</h2>
       <p>Paco uses Google Mobile Ads (AdMob) in advertising-enabled versions. Free users may receive interstitial advertising during Practice. The Garden of Mistakes also offers an optional rewarded advertisement that can grant an in-app Watering Can; this optional rewarded ad may also be available to Paco Pro users.</p>
       <p>Paco uses Google’s User Messaging Platform (UMP) to request and store advertising privacy choices where required, including European consent choices and supported U.S. state privacy choices. When UMP indicates that privacy options must remain available, you can reopen them from <strong>Settings → Ad privacy</strong>.</p>
+      <p><strong>The advertising treatment depends on your age band</strong> (see section 2). For users <strong>under 13</strong>, ad requests carry Google&rsquo;s child-directed treatment: no personalized advertising, no remarketing, and <strong>no use of the device advertising identifier</strong>. For users aged <strong>13&ndash;17</strong>, Paco marks ad requests as coming from a user below the age of consent, applying this as a precautionary measure to everyone in that band without determining the age of consent that applies in each individual country; this also excludes personalized advertising, and for the same reason the advertising consent form is not presented directly to them. For <strong>18 and over</strong> the standard consent flow applies. In every band the maximum ad content rating is limited to the rating suitable for general audiences.</p>
       <p>Depending on your choices and applicable law, Google may serve personalized, non-personalized, limited or other technically permitted ads. Declining personalized advertising does not necessarily mean that no ads will be shown.</p>
       <p>Paco does not directly sell personal information for monetary consideration. Some privacy laws define “sale” or “sharing” more broadly, including certain advertising-related transfers. Where applicable, the UMP privacy controls provide the relevant consent or opt-out choices.</p>
 
-      <h2>6. In-app purchases and subscriptions</h2>
+      <h2>7. In-app purchases and subscriptions</h2>
       <p>Paco offers digital purchases such as Paco Pro subscriptions or lifetime access and consumable Garden/gameplay items. On iOS these purchases are processed by Apple through StoreKit; on Android, purchases are processed by Google Play where such products are offered.</p>
       <p>The app receives only the purchase/entitlement information needed to provide the purchased feature or item, such as product identifiers, transaction status/identifiers and subscription entitlement or expiry information. Payment-card and banking details are handled by the platform store, not by Paco.</p>
       <p>Restorable purchases such as eligible subscriptions or non-consumable Pro access are restored through the platform store. Consumable item balances form part of Paco’s local gameplay state and may also be included in cloud backup if you have enabled that feature.</p>
 
-      <h2>7. Service providers and international processing</h2>
+      <h2>8. Service providers and international processing</h2>
       <p>Paco uses the following providers:</p>
       <ul>
         <li><strong>Google Firebase:</strong> authentication, cloud backup/storage and optional analytics.</li>
         <li><strong>Google Mobile Ads / AdMob and UMP:</strong> advertising, ad measurement, fraud prevention, diagnostics and advertising privacy choices.</li>
-        <li><strong>Apple:</strong> Sign in with Apple and StoreKit/App Store purchase processing on iOS.</li>
+        <li><strong>Apple:</strong> Sign in with Apple, StoreKit/App Store purchase processing on iOS, and the Declared Age Range service that returns an age range on supported systems. The age range is provided by the operating system on the device: Paco receives only the range, never a date of birth.</li>
         <li><strong>Google Play:</strong> platform services and purchase processing on Android where applicable.</li>
       </ul>
-      <p>These providers may process data in countries other than your country of residence, including the United States, according to their own terms, privacy documentation and applicable transfer safeguards.</p>
+      <p>These providers may process data in countries other than your country of residence, including the United States. Paco does not operate its own servers: the transfers are those carried out by Google and Apple as part of their services, and the safeguards are the ones those providers put in place and describe in their own documentation &mdash; for transfers outside the European Economic Area, Google states that it relies on the European Commission&rsquo;s standard contractual clauses, alongside the adequacy decisions that apply from time to time. The links below lead to their current documentation, which prevails over this summary.</p>
       <p>Provider information: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://firebase.google.com/support/privacy/">Firebase Privacy and Security</a>, <a href="https://policies.google.com/technologies/ads">How Google uses data for advertising</a>, and <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
 
-      <h2>8. Data security</h2>
+      <h2>9. Data security</h2>
       <p>Data transmitted between the app and its service providers is encrypted in transit. Firebase also provides encryption at rest for several services used by Paco. No method of electronic storage or transmission is completely secure, but reasonable technical measures are used to protect information and reduce the risk of unauthorized access.</p>
 
-      <h2>9. Data retention</h2>
-      <p>Local app data remains on your device until you reset/clear the app data or uninstall the app, subject to operating-system behavior. Account information and cloud backups are retained while needed to provide the account/backup service, until you delete them, or as otherwise required for security and legal obligations.</p>
-      <p>Analytics and advertising data are retained according to the settings and policies of the relevant Google services. App-store purchase history and billing records are retained by Apple or Google according to their own policies and legal obligations.</p>
+      <h2>10. Data retention</h2>
+      <p>Local app data, including the stored year of birth, remains on your device until you reset or clear the app data or uninstall the app, subject to operating-system behavior. Paco keeps <strong>two rotating cloud backup copies</strong> per account: each new backup replaces the older of the two, so no further history is kept. Account information and cloud backups are retained for as long as the account exists; <strong>deleting your Paco account deletes the account record and its cloud backups</strong>, other than anything we are required to retain to comply with a legal obligation or to establish, exercise or defend legal claims.</p>
+      <p>Firebase Analytics data are retained for the periods configured in the linked Google Analytics property: <strong>event data for 2 months</strong> and <strong>user-level data for 14 months</strong>, after which Google deletes them; aggregated reports may remain available beyond those periods. Advertising data are processed and retained by Google under its own advertising policies and retention periods; Paco does not store them. App-store purchase history and billing records are retained by Apple or Google according to their own policies and legal obligations.</p>
 
-      <h2>10. Account deletion, cloud data and subscriptions</h2>
+      <h2>11. Account deletion, cloud data and subscriptions</h2>
       <p>You may request deletion directly inside Paco through the account settings. You may also use the public deletion page:</p>
       <p><a href="paco-delete-account.html">Open the Paco account deletion page</a></p>
       <p>Deleting the Paco account is intended to remove the Paco authentication account and associated cloud backup data. Data stored only on your device remains until you clear/reset the app data or uninstall the app.</p>
       <p><strong>Deleting your Paco account does not automatically cancel an App Store or Google Play subscription and does not itself refund a purchase.</strong> Store subscriptions and billing must be managed through the relevant Apple or Google account/store.</p>
 
-      <h2>11. Your privacy rights</h2>
+      <h2>12. Your privacy rights</h2>
       <p>Depending on your location, you may have rights to access, correct, delete, restrict or object to certain processing, request portability, withdraw consent, or opt out of certain advertising-related sale/sharing or targeted advertising. You can change available analytics and advertising choices in Paco’s settings and can contact us for privacy requests.</p>
       <p>Withdrawing consent does not affect processing that was lawful before withdrawal. You may also have the right to lodge a complaint with your competent data protection authority.</p>
 
-      <h2>12. Children</h2>
-      <p>Paco is an educational app and is not specifically directed to children. Users who are not legally able to consent to the relevant data processing or purchases should use the app only with the authorization of a parent or legal guardian. If you believe personal information has been provided without required authorization, contact us so the issue can be reviewed.</p>
+      <h2>13. Children</h2>
+      <p>Paco is a language-learning app used by people of different ages, <strong>including children</strong>: the audiences declared on Google Play start at 6 years. It is therefore a mixed-audience app, not an app directed exclusively to children.</p>
+      <p><strong>Paco itself does not create accounts, cloud backups or analytics profiles for users under 18.</strong> As described in section 2, for those users the app runs entirely on the device: no account is created, not even an anonymous one, no cloud backup is available, and no analytics are collected. The year of birth used to determine the age band is stored on the device only and never leaves it, and where the band comes from Apple&rsquo;s Declared Age Range instead, nothing at all is stored.</p>
+      <p><strong>Advertising is the one exception, and we state it plainly.</strong> Younger users are shown ads, and to serve them Google&rsquo;s advertising technology processes a limited set of data described in section 1 &mdash; typically the IP address, ads viewed and ad interactions, and technical and diagnostic information &mdash; for contextual advertising, measurement, security and fraud prevention. What the protections described in section 6 remove is personalized advertising, remarketing and, for users under 13, the use of the device advertising identifier. They do not make the ad request itself invisible.</p>
+      <p>Where local law requires the authorization of a parent or legal guardian for purchases, subscriptions or other activities, that authorization must be obtained before proceeding. If you believe personal information has been provided without the required authorization, contact us so the issue can be reviewed.</p>
 
-      <h2>13. Changes</h2>
+      <h2>14. Changes</h2>
       <p>This policy may be updated when Paco’s features, supported platforms, service providers or data practices change. The effective date at the top of this page will be updated accordingly.</p>
 
-      <h2>14. Contact and controller</h2>
-      <p>For the processing carried out directly by Paco, the data controller is <strong>Francesco Margutti</strong>, developer of Paco.</p>
+      <h2>15. Contact and controller</h2>
+      <p>For the processing carried out directly by Paco, the data controller is <strong>Francesco Margutti</strong>, developer of Paco, Via Ca' Polverin 143, 31032 Casale sul Sile (Treviso), Italy.</p>
       <p>Privacy/support email: <a href="mailto:pacoapp.support@gmail.com">pacoapp.support@gmail.com</a></p>
     </section>
 
     <section class="panel" data-lang-panel="it">
       <h1>Informativa sulla privacy di Paco</h1>
-      <p class="muted">Data di entrata in vigore: 4 settembre 2026</p>
+      <p class="muted">Data di entrata in vigore: 5 settembre 2026</p>
       <p>Questa informativa spiega come l’applicazione per l’apprendimento linguistico <strong>Paco: Coniuga e Colleziona</strong> (“Paco”, “l’app”) tratta le informazioni durante l’utilizzo della versione Android o iOS.</p>
 
       <div class="notice"><strong>Nota sulle piattaforme:</strong> l’accesso con email/password e Google è disponibile su Android e iOS. Accedi con Apple è disponibile soltanto nella versione iOS. Le funzioni pubblicitarie e gli acquisti in-app possono variare in base alla piattaforma e alla versione dell’app.</div>
@@ -156,13 +170,22 @@ code{overflow-wrap:anywhere}
       </ul>
       <p>Lo stato di apprendimento/gioco viene salvato localmente sul dispositivo. Viene inviato al backup cloud di Paco soltanto se utilizzi un account Paco idoneo e attivi la funzione di backup cloud. I servizi pubblicitari possono trattare dati pubblicitari/tecnici anche quando non utilizzi un account Paco.</p>
 
-      <h2>2. Archiviazione locale e backup cloud</h2>
-      <p>Paco salva progressi e impostazioni localmente sul dispositivo per consentire il normale funzionamento dell’app. Se attivi il backup cloud, i dati del backup vengono archiviati tramite Firebase e associati al tuo account Paco.</p>
+      <h2>2. Fasce d’età e cosa cambia per gli utenti più giovani</h2>
+      <p>Paco è usata da persone di età diverse, <strong>bambini compresi</strong>. Su Google Play i pubblici di destinazione dichiarati sono 6&ndash;8, 9&ndash;12, 13&ndash;15, 16&ndash;17 e 18+.</p>
+      <p><strong>Su iPhone e iPad Paco chiede prima ad Apple.</strong> Sui sistemi che lo permettono, l’app usa la Declared Age Range di Apple. È il sistema operativo a decidere se e come chiedertelo: fuori dalle regioni con obblighi di verifica dell’età la condivisione dipende da te, mentre dove la legge locale impone una verifica dell’età la fascia può essere fornita secondo quelle regole. In ogni caso Paco riceve <strong>una fascia d’età, mai una data di nascita</strong>, e usa soltanto quella fascia, per una cosa sola: applicare il trattamento adeguato alla tua età. Quando la risposta arriva da Apple non viene conservato nulla: Paco la richiede a ogni avvio, così se tu o un genitore aggiornate l’età nelle impostazioni di sistema, Paco recepisce il cambiamento da sé. Se il tuo sistema non lo permette, o se la fascia non viene condivisa, l’app ripiega sulla domanda descritta qui sotto, esattamente come su Android.</p>
+      <p>Dove Apple non fornisce la fascia &mdash; su Android, nel browser, sui sistemi più vecchi, o se rifiuti &mdash; Paco chiede <strong>soltanto l’anno di nascita</strong>, mai una data completa. L’anno serve a una cosa sola: collocarti in una delle tre fasce interne (meno di 13 anni, 13&ndash;17, 18 e oltre). <strong>L’anno resta soltanto sul tuo dispositivo.</strong> Non viene mai trasmesso a noi né a terzi, non fa parte dei tuoi dati di apprendimento salvati e non è incluso in alcun backup. Viene conservato sul dispositivo per una ragione sola: perché la tua fascia si aggiorni da sé con il passare degli anni &mdash; chi risponde a 17 anni viene trattato come adulto non appena il conto arriva a 18, senza dover fare nulla. Poiché è noto il solo anno, Paco applica la fascia più protettiva ogni volta che il compleanno dell’anno in corso potrebbe non essere ancora passato.</p>
+      <p>La domanda viene posta una volta per installazione. Se reinstalli l’app o ne cancelli i dati, viene posta di nuovo. L’app non prevede un modo per modificare la risposta in seguito.</p>
+      <p><strong>Meno di 13 anni e 13&ndash;17 &mdash; account, nuvola e Analytics restano disattivati.</strong> Non viene creato nessun account Paco, nemmeno anonimo; il backup e la sincronizzazione nella nuvola non sono disponibili; Firebase Analytics non viene avviato né proposto, quindi la domanda sul consenso alle statistiche non compare affatto. La pubblicità viene mostrata. Come spiegato nella sezione 6, per erogare quegli annunci la tecnologia pubblicitaria di Google tratta comunque un insieme limitato di dati tecnici e pubblicitari, anche in queste fasce.</p>
+      <p><strong>18 anni e oltre.</strong> Account, backup nella nuvola e statistiche facoltative sono disponibili come descritto nel resto di questa informativa.</p>
+      <p><strong>Finché la fascia non è nota, nulla esce dal dispositivo.</strong> Mentre la domanda è a schermo, Paco non avvia pubblicità, autenticazione, servizi cloud né statistiche.</p>
+
+      <h2>3. Archiviazione locale e backup cloud</h2>
+      <p>Paco salva progressi e impostazioni localmente sul dispositivo per consentire il normale funzionamento dell’app. Se attivi il backup cloud, i dati del backup vengono archiviati tramite Firebase e associati al tuo account Paco. <strong>Il backup nella nuvola è disponibile soltanto agli utenti della fascia 18 e oltre</strong> (vedi la sezione 2); per tutti gli altri i dati salvati esistono soltanto sul dispositivo.</p>
       <p>Il backup cloud è facoltativo. Può essere disattivato dall’app. La disattivazione del backup automatico non elimina automaticamente le copie cloud già presenti; il backup cloud può essere eliminato separatamente.</p>
       <p>Quando Paco rileva che un backup cloud è meno recente dei dati presenti sul dispositivo, l’app mostra un avviso aggiuntivo prima di consentire al vecchio backup di sostituire lo stato corrente. Il caricamento di un backup meno recente può eliminare progressi o oggetti ottenuti successivamente, inclusi oggetti consumabili acquistati.</p>
 
-      <h2>3. Finalità e basi giuridiche</h2>
-      <p>A seconda del luogo in cui ti trovi e della normativa applicabile, i dati vengono trattati per fornire le funzioni richieste, sulla base del consenso, per legittimi interessi di sicurezza/affidabilità o quando necessario per adempiere a obblighi legali.</p>
+      <h2>4. Finalità e basi giuridiche</h2>
+      <p>A seconda del luogo in cui ti trovi e della normativa applicabile, la base giuridica cambia a seconda della finalità. Dove si applica il Regolamento generale sulla protezione dei dati, ci basiamo su: <strong>esecuzione di un contratto</strong> per creare e autenticare l’account, fornire il backup nella nuvola e consegnare o ripristinare gli acquisti effettuati; <strong>il tuo consenso</strong> per Firebase Analytics facoltativo e per la pubblicità personalizzata, revocabile in qualsiasi momento; <strong>il nostro legittimo interesse</strong> alla sicurezza e all’affidabilità del servizio, per prevenzione delle frodi, rilevamento degli abusi, diagnostica e integrità del servizio; per la pubblicità, <strong>il tuo consenso</strong> ovunque la normativa applicabile lo richieda &mdash; compreso il caso in cui il consenso serva per archiviare o leggere informazioni sul tuo dispositivo, che può valere anche per la pubblicità non personalizzata &mdash; e il legittimo interesse all’erogazione di pubblicità non personalizzata per sostenere un’app gratuita soltanto dove quella base è consentita; e <strong>l’adempimento di un obbligo legale</strong> dove la conservazione o la comunicazione siano imposte dalla legge. Le finalità sono:</p>
       <ul>
         <li>creare e autenticare l’account;</li>
         <li>salvare, sincronizzare e ripristinare i dati del backup cloud quando attivi tale funzione;</li>
@@ -174,63 +197,68 @@ code{overflow-wrap:anywhere}
         <li>rispondere alle richieste di assistenza e risolvere problemi tecnici.</li>
       </ul>
 
-      <h2>4. Scelte relative agli analytics</h2>
+      <h2>5. Scelte relative agli analytics</h2>
       <p>Firebase Analytics è facoltativo in Paco e viene utilizzato soltanto quando l’utente ha prestato il consenso agli analytics. Puoi modificare questa scelta dalle impostazioni dell’app. Paco non utilizza i dati di Firebase Analytics per pubblicità o tracciamento tra app diverse.</p>
+      <p><strong>Per gli utenti di età inferiore a 18 anni Firebase Analytics non viene utilizzato affatto</strong> (vedi la sezione 2): non viene inizializzato, non viene raccolto alcun dato di analisi e la domanda sul consenso non viene presentata.</p>
       <p>La scelta relativa a Firebase Analytics è separata dalle scelte privacy relative alla pubblicità. Rifiutare Firebase Analytics facoltativo non disattiva automaticamente la pubblicità.</p>
 
-      <h2>5. Pubblicità e scelte privacy relative agli annunci</h2>
+      <h2>6. Pubblicità e scelte privacy relative agli annunci</h2>
       <p>Paco utilizza Google Mobile Ads (AdMob) nelle versioni in cui la pubblicità è attiva. Gli utenti Free possono visualizzare annunci interstitial durante la Pratica. Nel Giardino degli errori è inoltre disponibile un annuncio premiato facoltativo che può assegnare un Innaffiatoio virtuale; questo annuncio facoltativo può essere disponibile anche agli utenti Paco Pro.</p>
       <p>Paco utilizza Google User Messaging Platform (UMP) per richiedere e memorizzare le scelte privacy pubblicitarie quando necessario, comprese le scelte di consenso europee e le normative privacy supportate degli Stati Uniti. Quando UMP indica che le opzioni privacy devono restare accessibili, puoi riaprirle da <strong>Impostazioni → Privacy pubblicità</strong>.</p>
+      <p><strong>Il trattamento pubblicitario dipende dalla fascia d’età</strong> (vedi la sezione 2). Per gli utenti <strong>sotto i 13 anni</strong> le richieste di annunci portano il trattamento per i minori di 13 anni previsto da Google: nessuna pubblicità personalizzata, nessun remarketing e <strong>nessun uso dell’identificatore pubblicitario del dispositivo</strong>. Per gli utenti fra <strong>13 e 17 anni</strong> Paco contrassegna le richieste come provenienti da un utente al di sotto dell’età del consenso, applicandolo in via prudenziale a tutta la fascia senza determinare quale sia l’età del consenso in ciascun singolo Paese; anche questo esclude la pubblicità personalizzata e, per la stessa ragione, il modulo di consenso pubblicitario non viene presentato direttamente a loro. Per la fascia <strong>18 e oltre</strong> vale il normale percorso di consenso. In tutte le fasce la classificazione massima dei contenuti pubblicitari è limitata a quella adatta a un pubblico generale.</p>
       <p>In base alle tue scelte e alla normativa applicabile, Google può mostrare annunci personalizzati, non personalizzati, limitati o altre forme di erogazione tecnica consentita. Il rifiuto della pubblicità personalizzata non implica necessariamente che non verranno mostrati annunci.</p>
       <p>Paco non vende direttamente dati personali in cambio di denaro. Alcune normative privacy definiscono però “vendita” o “condivisione” in modo più ampio, includendo determinati trasferimenti legati alla pubblicità. Dove applicabile, i controlli UMP forniscono le relative scelte di consenso o opt-out.</p>
 
-      <h2>6. Acquisti in-app e abbonamenti</h2>
+      <h2>7. Acquisti in-app e abbonamenti</h2>
       <p>Paco offre acquisti digitali come abbonamenti Paco Pro o accesso Pro permanente e oggetti consumabili del Giardino/gioco. Su iOS gli acquisti vengono elaborati da Apple tramite StoreKit; su Android gli acquisti vengono elaborati da Google Play dove tali prodotti sono disponibili.</p>
       <p>L’app riceve soltanto le informazioni sull’acquisto/diritto di accesso necessarie per fornire il prodotto, come identificativi del prodotto, stato e identificativi della transazione e stato/scadenza dell’abbonamento o diritto di accesso. I dati della carta e le informazioni bancarie vengono gestiti dallo store della piattaforma, non da Paco.</p>
       <p>Gli acquisti ripristinabili, come gli abbonamenti idonei o l’accesso Pro non consumabile, vengono ripristinati tramite lo store della piattaforma. Il saldo degli oggetti consumabili fa parte dello stato locale di gioco di Paco e può essere incluso nel backup cloud se hai attivato tale funzione.</p>
 
-      <h2>7. Fornitori di servizi e trattamento internazionale</h2>
+      <h2>8. Fornitori di servizi e trattamento internazionale</h2>
       <p>Paco utilizza i seguenti fornitori:</p>
       <ul>
         <li><strong>Google Firebase:</strong> autenticazione, backup/archiviazione cloud e analytics facoltativi.</li>
         <li><strong>Google Mobile Ads / AdMob e UMP:</strong> pubblicità, misurazione degli annunci, prevenzione delle frodi, diagnostica e gestione delle scelte privacy pubblicitarie.</li>
-        <li><strong>Apple:</strong> Accedi con Apple e gestione degli acquisti tramite StoreKit/App Store su iOS.</li>
+        <li><strong>Apple:</strong> Accedi con Apple, gestione degli acquisti tramite StoreKit/App Store su iOS, e il servizio Declared Age Range che restituisce una fascia d’età sui sistemi compatibili. La fascia viene fornita dal sistema operativo sul dispositivo: Paco riceve soltanto la fascia, mai una data di nascita.</li>
         <li><strong>Google Play:</strong> servizi della piattaforma e gestione degli acquisti su Android, dove applicabile.</li>
       </ul>
-      <p>Questi fornitori possono trattare dati in Paesi diversi da quello di residenza dell’utente, inclusi gli Stati Uniti, secondo i propri termini, la propria documentazione privacy e le garanzie applicabili ai trasferimenti internazionali.</p>
+      <p>Questi fornitori possono trattare dati in Paesi diversi da quello di residenza dell’utente, inclusi gli Stati Uniti. Paco non gestisce server propri: i trasferimenti sono quelli effettuati da Google e Apple nell’ambito dei loro servizi, e le garanzie sono quelle che tali fornitori adottano e descrivono nella propria documentazione &mdash; per i trasferimenti al di fuori dello Spazio economico europeo, Google dichiara di basarsi sulle clausole contrattuali tipo della Commissione europea, oltre alle decisioni di adeguatezza applicabili di volta in volta. I collegamenti qui sotto portano alla loro documentazione aggiornata, che prevale su questa sintesi.</p>
       <p>Informazioni dei fornitori: <a href="https://policies.google.com/privacy">Informativa sulla privacy di Google</a>, <a href="https://firebase.google.com/support/privacy/">Privacy e sicurezza Firebase</a>, <a href="https://policies.google.com/technologies/ads">Come Google utilizza i dati per la pubblicità</a> e <a href="https://www.apple.com/legal/privacy/">Informativa sulla privacy di Apple</a>.</p>
 
-      <h2>8. Sicurezza</h2>
+      <h2>9. Sicurezza</h2>
       <p>I dati trasmessi tra l’app e i fornitori di servizi sono crittografati durante il trasferimento. Firebase fornisce inoltre la crittografia dei dati archiviati per diversi servizi utilizzati da Paco. Nessun sistema elettronico è completamente sicuro, ma vengono adottate misure tecniche ragionevoli per proteggere le informazioni e ridurre il rischio di accessi non autorizzati.</p>
 
-      <h2>9. Conservazione</h2>
-      <p>I dati locali dell’app restano sul dispositivo finché non resetti/cancelli i dati dell’app o disinstalli l’app, compatibilmente con il comportamento del sistema operativo. I dati dell’account e i backup cloud vengono conservati finché necessari per fornire i relativi servizi, finché non li elimini o per quanto richiesto da esigenze di sicurezza e obblighi legali.</p>
-      <p>I dati di analytics e pubblicità vengono conservati secondo le impostazioni e le policy dei relativi servizi Google. La cronologia degli acquisti e i dati di fatturazione dello store sono conservati da Apple o Google secondo le rispettive policy e gli obblighi legali.</p>
+      <h2>10. Conservazione</h2>
+      <p>I dati locali dell’app, compreso l’anno di nascita conservato, restano sul dispositivo finché non resetti o cancelli i dati dell’app o la disinstalli, compatibilmente con il comportamento del sistema operativo. Paco conserva <strong>due copie alternate del backup</strong> per ciascun account: ogni nuovo backup sostituisce la più vecchia delle due, quindi non viene mantenuto alcuno storico ulteriore. I dati dell’account e i backup nella nuvola sono conservati finché l’account esiste; <strong>l’eliminazione dell’account Paco cancella la scheda dell’account e i relativi backup</strong>, salvo quanto siamo tenuti a conservare per adempiere a un obbligo legale o per accertare, esercitare o difendere un diritto in sede giudiziaria.</p>
+      <p>I dati di Firebase Analytics vengono conservati per i periodi impostati nella proprietà Google Analytics collegata: <strong>i dati degli eventi per 2 mesi</strong> e <strong>i dati a livello di utente per 14 mesi</strong>, dopodiché Google li elimina; i rapporti aggregati possono restare disponibili oltre quei periodi. I dati pubblicitari sono trattati e conservati da Google secondo le sue policy e i suoi periodi di conservazione; Paco non li conserva. La cronologia degli acquisti e i dati di fatturazione dello store sono conservati da Apple o Google secondo le rispettive policy e gli obblighi legali.</p>
 
-      <h2>10. Eliminazione dell’account, dati cloud e abbonamenti</h2>
+      <h2>11. Eliminazione dell’account, dati cloud e abbonamenti</h2>
       <p>Puoi richiedere l’eliminazione direttamente dentro Paco dalle impostazioni dell’account. Puoi inoltre utilizzare la pagina pubblica:</p>
       <p><a href="paco-delete-account.html">Apri la pagina di eliminazione dell’account Paco</a></p>
       <p>L’eliminazione dell’account Paco è destinata a rimuovere l’account di autenticazione Paco e i dati di backup cloud associati. I dati presenti soltanto sul dispositivo restano fino alla cancellazione/reset dei dati dell’app o alla disinstallazione.</p>
       <p><strong>L’eliminazione dell’account Paco non annulla automaticamente un abbonamento App Store o Google Play e non determina di per sé un rimborso.</strong> Gli abbonamenti e la fatturazione dello store devono essere gestiti tramite il relativo account/store Apple o Google.</p>
 
-      <h2>11. I tuoi diritti privacy</h2>
+      <h2>12. I tuoi diritti privacy</h2>
       <p>A seconda del luogo in cui ti trovi, puoi avere il diritto di accedere, correggere, eliminare, limitare o opporti a determinati trattamenti, richiedere la portabilità, revocare il consenso o effettuare opt-out da determinate forme di vendita/condivisione pubblicitaria o pubblicità mirata. Puoi modificare le scelte disponibili relative ad analytics e pubblicità dalle impostazioni di Paco e puoi contattarci per richieste privacy.</p>
       <p>La revoca del consenso non pregiudica la liceità del trattamento effettuato prima della revoca. Puoi inoltre avere il diritto di presentare un reclamo all’autorità competente per la protezione dei dati.</p>
 
-      <h2>12. Minori</h2>
-      <p>Paco è un’app educativa e non è rivolta specificamente ai bambini. Chi non può prestare validamente il consenso ai trattamenti o agli acquisti rilevanti dovrebbe utilizzare l’app soltanto con l’autorizzazione di un genitore o tutore legale. Se ritieni che siano state fornite informazioni personali senza l’autorizzazione necessaria, contattaci affinché la situazione possa essere verificata.</p>
+      <h2>13. Minori</h2>
+      <p>Paco è un’app per l’apprendimento linguistico usata da persone di età diverse, <strong>bambini compresi</strong>: i pubblici dichiarati su Google Play partono dai 6 anni. È quindi un’app a pubblico misto, non un’app rivolta esclusivamente ai bambini.</p>
+      <p><strong>Paco non crea account, backup nella nuvola né profili statistici per gli utenti di età inferiore a 18 anni.</strong> Come descritto nella sezione 2, per quegli utenti l’app funziona interamente sul dispositivo: non viene creato alcun account, nemmeno anonimo, il backup nella nuvola non è disponibile e non viene raccolta alcuna statistica. L’anno di nascita usato per determinare la fascia resta soltanto sul dispositivo e non lo lascia mai; e dove la fascia arriva invece dalla Declared Age Range di Apple, non viene conservato proprio niente.</p>
+      <p><strong>La pubblicità è l’unica eccezione, e lo diciamo chiaramente.</strong> Agli utenti più giovani gli annunci vengono mostrati, e per erogarli la tecnologia pubblicitaria di Google tratta un insieme limitato di dati descritti nella sezione 1 &mdash; tipicamente indirizzo IP, annunci visualizzati e interazioni con gli annunci, informazioni tecniche e diagnostiche &mdash; per pubblicità contestuale, misurazione, sicurezza e prevenzione delle frodi. Quello che le protezioni descritte nella sezione 6 tolgono è la pubblicità personalizzata, il remarketing e, per chi ha meno di 13 anni, l’uso dell’identificatore pubblicitario del dispositivo. Non rendono invisibile la richiesta di annunci in sé.</p>
+      <p>Quando la legge locale richiede l’autorizzazione di un genitore o tutore legale per acquisti, abbonamenti o altre attività, tale autorizzazione deve essere ottenuta prima di procedere. Se ritieni che siano state fornite informazioni personali senza l’autorizzazione necessaria, contattaci affinché la situazione possa essere verificata.</p>
 
-      <h2>13. Modifiche</h2>
+      <h2>14. Modifiche</h2>
       <p>Questa informativa può essere aggiornata quando cambiano le funzioni, le piattaforme supportate, i fornitori di servizi o le pratiche relative ai dati di Paco. La data indicata all’inizio verrà aggiornata di conseguenza.</p>
 
-      <h2>14. Contatti e titolare</h2>
-      <p>Per i trattamenti effettuati direttamente da Paco, il titolare del trattamento è <strong>Francesco Margutti</strong>, sviluppatore di Paco.</p>
+      <h2>15. Contatti e titolare</h2>
+      <p>Per i trattamenti effettuati direttamente da Paco, il titolare del trattamento è <strong>Francesco Margutti</strong>, sviluppatore di Paco, Via Ca' Polverin 143, 31032 Casale sul Sile (Treviso), Italia.</p>
       <p>Email privacy/assistenza: <a href="mailto:pacoapp.support@gmail.com">pacoapp.support@gmail.com</a></p>
     </section>
 
     <section class="panel" data-lang-panel="es">
       <h1>Política de privacidad de Paco</h1>
-      <p class="muted">Fecha de entrada en vigor: 4 de septiembre de 2026</p>
+      <p class="muted">Fecha de entrada en vigor: 5 de septiembre de 2026</p>
       <p>Esta política explica cómo la aplicación de aprendizaje de idiomas <strong>Paco: Conjuga y Colecciona</strong> (“Paco”, “la aplicación”) trata la información durante el uso de la versión para Android o iOS.</p>
 
       <div class="notice"><strong>Nota sobre las plataformas:</strong> el acceso con correo electrónico/contraseña y Google está disponible en Android y iOS. Iniciar sesión con Apple está disponible únicamente en la versión para iOS. Las funciones de publicidad y compras dentro de la aplicación pueden variar según la plataforma y la versión.</div>
@@ -249,13 +277,22 @@ code{overflow-wrap:anywhere}
       </ul>
       <p>El estado de aprendizaje/juego se guarda localmente en tu dispositivo. Solo se envía a la copia de seguridad de Paco si utilizas una cuenta Paco compatible y activas la función de copia de seguridad. Los servicios publicitarios pueden tratar datos publicitarios/técnicos aunque no utilices una cuenta Paco.</p>
 
-      <h2>2. Almacenamiento local y copia de seguridad</h2>
-      <p>Paco guarda el progreso y los ajustes localmente en el dispositivo para que la aplicación funcione con normalidad. Si activas la copia de seguridad, los datos se almacenan mediante Firebase y se asocian con tu cuenta Paco.</p>
+      <h2>2. Franjas de edad y qué cambia para los usuarios más jóvenes</h2>
+      <p>Paco la utilizan personas de distintas edades, <strong>incluidos niños</strong>. En Google Play los públicos objetivo declarados son 6&ndash;8, 9&ndash;12, 13&ndash;15, 16&ndash;17 y 18+.</p>
+      <p><strong>En iPhone y iPad, Paco pregunta primero a Apple.</strong> En los sistemas que lo permiten, la aplicación utiliza la Declared Age Range de Apple. Es el sistema operativo quien decide si preguntarte y cómo: fuera de las regiones con obligaciones de verificación de edad, compartir la franja depende de ti, mientras que donde la ley local exige una verificación de edad la franja puede facilitarse conforme a esas normas. En todo caso Paco recibe <strong>una franja de edad, nunca una fecha de nacimiento</strong>, y utiliza únicamente esa franja, para una sola finalidad: aplicar el tratamiento adecuado a tu edad. Cuando la respuesta viene de Apple no se guarda nada: Paco la solicita en cada arranque, de modo que si tú o un progenitor actualizáis la edad en los ajustes del sistema, Paco recoge el cambio por sí solo. Si tu sistema no lo permite, o si la franja no se comparte, la aplicación recurre a la pregunta descrita a continuación, exactamente igual que en Android.</p>
+      <p>Cuando Apple no facilita la franja &mdash; en Android, en un navegador, en sistemas más antiguos o si te niegas &mdash; Paco pide <strong>únicamente el año de nacimiento</strong>, nunca una fecha completa. El año sirve para una sola cosa: situarte en una de las tres franjas internas (menos de 13 años, 13&ndash;17, o 18 y más). <strong>El año se guarda únicamente en tu dispositivo.</strong> Nunca se transmite ni a nosotros ni a terceros, no forma parte de tus datos de aprendizaje guardados y no se incluye en ninguna copia de seguridad. Se conserva en el dispositivo por una sola razón: para que tu franja de edad se actualice sola con el paso de los años &mdash; quien responde a los 17 pasa a ser tratado como adulto en cuanto el cálculo llega a 18, sin tener que hacer nada. Como solo se conoce el año, Paco aplica la franja más protectora siempre que el cumpleaños del año en curso podría no haber pasado todavía.</p>
+      <p>La pregunta se hace una vez por instalación. Si reinstalas la aplicación o borras sus datos, se vuelve a hacer. La aplicación no ofrece una forma de cambiar la respuesta después.</p>
+      <p><strong>Menos de 13 años y 13&ndash;17 &mdash; cuenta, nube y Analytics permanecen desactivados.</strong> No se crea ninguna cuenta Paco, ni siquiera anónima; la copia de seguridad y la sincronización en la nube no están disponibles; Firebase Analytics no se inicia ni se ofrece, por lo que la pregunta de consentimiento no aparece en absoluto. Sí se muestra publicidad. Como se explica en la sección 6, para servir esos anuncios la tecnología publicitaria de Google trata igualmente un conjunto limitado de datos técnicos y publicitarios, también en estas franjas.</p>
+      <p><strong>18 años y más.</strong> Cuenta, copia de seguridad en la nube y Analytics opcional están disponibles como se describe en el resto de esta política.</p>
+      <p><strong>Hasta que la franja no se conoce, nada sale del dispositivo.</strong> Mientras la pregunta está en pantalla, Paco no inicia publicidad, autenticación, servicios en la nube ni Analytics.</p>
+
+      <h2>3. Almacenamiento local y copia de seguridad</h2>
+      <p>Paco guarda el progreso y los ajustes localmente en el dispositivo para que la aplicación funcione con normalidad. Si activas la copia de seguridad, los datos se almacenan mediante Firebase y se asocian con tu cuenta Paco. <strong>La copia de seguridad en la nube solo está disponible para los usuarios de la franja de 18 años o más</strong> (véase la sección 2); para el resto, los datos guardados existen únicamente en el dispositivo.</p>
       <p>La copia de seguridad en la nube es opcional. Puede desactivarse desde la aplicación. Desactivar la copia automática no elimina automáticamente las copias ya almacenadas; puedes eliminar la copia en la nube por separado.</p>
       <p>Cuando Paco detecta que una copia en la nube es más antigua que los datos del dispositivo, la aplicación muestra una advertencia adicional antes de permitir que la copia antigua sustituya el estado actual. Cargar una copia más antigua puede eliminar progresos u objetos obtenidos después de esa copia, incluidos objetos consumibles comprados.</p>
 
-      <h2>3. Finalidades y bases jurídicas</h2>
-      <p>Dependiendo de tu ubicación y de la legislación aplicable, los datos se tratan para ofrecer las funciones solicitadas, sobre la base de tu consentimiento, por intereses legítimos de seguridad/fiabilidad o cuando sea necesario para cumplir obligaciones legales.</p>
+      <h2>4. Finalidades y bases jurídicas</h2>
+      <p>Dependiendo de tu ubicación y de la legislación aplicable, la base jurídica varía según la finalidad. Cuando se aplica el Reglamento General de Protección de Datos, nos basamos en: <strong>la ejecución de un contrato</strong> para crear y autenticar la cuenta, ofrecer la copia de seguridad en la nube y entregar o restaurar las compras realizadas; <strong>tu consentimiento</strong> para Firebase Analytics opcional y para la publicidad personalizada, revocable en cualquier momento; <strong>nuestro interés legítimo</strong> en la seguridad y fiabilidad del servicio, para la prevención del fraude, la detección de abusos, el diagnóstico y la integridad del servicio; para la publicidad, <strong>tu consentimiento</strong> siempre que la legislación aplicable lo exija &mdash; incluido el caso en que el consentimiento sea necesario para almacenar o leer información en tu dispositivo, lo que también puede aplicarse a la publicidad no personalizada &mdash; y nuestro interés legítimo en ofrecer publicidad no personalizada para sostener una aplicación gratuita solo donde esa base esté permitida; y <strong>el cumplimiento de una obligación legal</strong> cuando la conservación o comunicación venga impuesta por la ley. Las finalidades son:</p>
       <ul>
         <li>crear y autenticar la cuenta;</li>
         <li>guardar, sincronizar y restaurar datos de copia de seguridad cuando activas esa función;</li>
@@ -267,57 +304,62 @@ code{overflow-wrap:anywhere}
         <li>responder a solicitudes de soporte y resolver problemas técnicos.</li>
       </ul>
 
-      <h2>4. Opciones sobre Analytics</h2>
+      <h2>5. Opciones sobre Analytics</h2>
       <p>Firebase Analytics es opcional en Paco y se utiliza únicamente cuando el usuario ha prestado su consentimiento para Analytics. Puedes cambiar esta elección desde los ajustes de la aplicación. Paco no utiliza los datos de Firebase Analytics para publicidad ni seguimiento entre diferentes aplicaciones.</p>
+      <p><strong>Para los usuarios menores de 18 años Firebase Analytics no se utiliza en absoluto</strong> (véase la sección 2): no se inicializa, no se recoge ningún dato de análisis y la pregunta de consentimiento no se presenta.</p>
       <p>La elección sobre Firebase Analytics es independiente de las opciones de privacidad publicitaria. Rechazar Firebase Analytics opcional no desactiva por sí solo la publicidad.</p>
 
-      <h2>5. Publicidad y opciones de privacidad publicitaria</h2>
+      <h2>6. Publicidad y opciones de privacidad publicitaria</h2>
       <p>Paco utiliza Google Mobile Ads (AdMob) en las versiones en las que la publicidad está habilitada. Los usuarios Free pueden ver anuncios intersticiales durante Práctica. El Jardín de errores también ofrece un anuncio con recompensa opcional que puede conceder una Regadera virtual; este anuncio opcional también puede estar disponible para usuarios Paco Pro.</p>
       <p>Paco utiliza Google User Messaging Platform (UMP) para solicitar y guardar las opciones de privacidad publicitaria cuando sea necesario, incluidas las opciones de consentimiento europeas y las leyes de privacidad estatales de EE. UU. compatibles. Cuando UMP indique que las opciones deben seguir accesibles, puedes volver a abrirlas desde <strong>Ajustes → Privacidad de anuncios</strong>.</p>
+      <p><strong>El tratamiento publicitario depende de tu franja de edad</strong> (véase la sección 2). Para los usuarios <strong>menores de 13 años</strong>, las solicitudes de anuncios llevan el tratamiento para menores previsto por Google: sin publicidad personalizada, sin remarketing y <strong>sin uso del identificador publicitario del dispositivo</strong>. Para los usuarios de <strong>13 a 17 años</strong>, Paco marca las solicitudes como procedentes de un usuario por debajo de la edad de consentimiento, aplicándolo con carácter cautelar a toda la franja y sin determinar cuál es la edad de consentimiento en cada país concreto; esto también excluye la publicidad personalizada y, por la misma razón, el formulario de consentimiento publicitario no se les presenta directamente. Para la franja de <strong>18 años o más</strong> se aplica el flujo de consentimiento normal. En todas las franjas, la clasificación máxima del contenido publicitario se limita a la adecuada para un público general.</p>
       <p>Según tus opciones y la legislación aplicable, Google puede mostrar anuncios personalizados, no personalizados, limitados u otras formas de entrega técnica permitidas. Rechazar la publicidad personalizada no significa necesariamente que no se mostrarán anuncios.</p>
       <p>Paco no vende directamente información personal a cambio de dinero. Algunas leyes de privacidad definen “venta” o “compartir” de forma más amplia e incluyen determinadas transferencias relacionadas con publicidad. Cuando corresponda, los controles UMP ofrecen las opciones de consentimiento u opt-out pertinentes.</p>
 
-      <h2>6. Compras dentro de la aplicación y suscripciones</h2>
+      <h2>7. Compras dentro de la aplicación y suscripciones</h2>
       <p>Paco ofrece compras digitales como suscripciones Paco Pro o acceso Pro permanente y objetos consumibles del Jardín/juego. En iOS las compras son procesadas por Apple mediante StoreKit; en Android son procesadas por Google Play cuando esos productos están disponibles.</p>
       <p>La aplicación recibe únicamente la información de compra/derecho necesaria para proporcionar el producto, como identificadores del producto, estado e identificadores de transacción y estado/expiración de la suscripción o derecho. Los datos de tarjeta y bancarios son gestionados por la tienda de la plataforma, no por Paco.</p>
       <p>Las compras restaurables, como suscripciones elegibles o acceso Pro no consumible, se restauran mediante la tienda de la plataforma. El saldo de objetos consumibles forma parte del estado local de juego de Paco y puede incluirse en la copia de seguridad si has activado esa función.</p>
 
-      <h2>7. Proveedores de servicios y tratamiento internacional</h2>
+      <h2>8. Proveedores de servicios y tratamiento internacional</h2>
       <p>Paco utiliza los siguientes proveedores:</p>
       <ul>
         <li><strong>Google Firebase:</strong> autenticación, copia/almacenamiento en la nube y Analytics opcional.</li>
         <li><strong>Google Mobile Ads / AdMob y UMP:</strong> publicidad, medición de anuncios, prevención del fraude, diagnóstico y gestión de opciones de privacidad publicitaria.</li>
-        <li><strong>Apple:</strong> Iniciar sesión con Apple y procesamiento de compras mediante StoreKit/App Store en iOS.</li>
+        <li><strong>Apple:</strong> Iniciar sesión con Apple, procesamiento de compras mediante StoreKit/App Store en iOS, y el servicio Declared Age Range que devuelve una franja de edad en los sistemas compatibles. La franja la facilita el sistema operativo en el dispositivo: Paco recibe únicamente la franja, nunca una fecha de nacimiento.</li>
         <li><strong>Google Play:</strong> servicios de plataforma y procesamiento de compras en Android, cuando corresponda.</li>
       </ul>
-      <p>Estos proveedores pueden tratar datos en países distintos de tu país de residencia, incluidos los Estados Unidos, conforme a sus términos, documentación de privacidad y salvaguardias aplicables para transferencias internacionales.</p>
+      <p>Estos proveedores pueden tratar datos en países distintos de tu país de residencia, incluidos los Estados Unidos. Paco no gestiona servidores propios: las transferencias son las que realizan Google y Apple como parte de sus servicios, y las salvaguardias son las que esos proveedores adoptan y describen en su propia documentación &mdash; para las transferencias fuera del Espacio Económico Europeo, Google declara basarse en las cláusulas contractuales tipo de la Comisión Europea, además de las decisiones de adecuación aplicables en cada momento. Los enlaces siguientes llevan a su documentación actualizada, que prevalece sobre este resumen.</p>
       <p>Información de los proveedores: <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>, <a href="https://firebase.google.com/support/privacy/">Privacidad y seguridad de Firebase</a>, <a href="https://policies.google.com/technologies/ads">Cómo utiliza Google los datos para publicidad</a> y <a href="https://www.apple.com/legal/privacy/">Política de privacidad de Apple</a>.</p>
 
-      <h2>8. Seguridad</h2>
+      <h2>9. Seguridad</h2>
       <p>Los datos transmitidos entre la aplicación y los proveedores de servicios se cifran durante la transferencia. Firebase también proporciona cifrado en reposo para varios servicios utilizados por Paco. Ningún sistema electrónico es completamente seguro, pero se aplican medidas técnicas razonables para proteger la información y reducir el riesgo de acceso no autorizado.</p>
 
-      <h2>9. Conservación</h2>
-      <p>Los datos locales permanecen en tu dispositivo hasta que restableces/borras los datos de la aplicación o la desinstalas, sujeto al comportamiento del sistema operativo. Los datos de la cuenta y las copias en la nube se conservan mientras sean necesarios para ofrecer esos servicios, hasta que los elimines o durante el tiempo requerido por motivos de seguridad u obligaciones legales.</p>
-      <p>Los datos de Analytics y publicidad se conservan según la configuración y las políticas de los servicios de Google correspondientes. El historial de compras y los registros de facturación de la tienda son conservados por Apple o Google según sus propias políticas y obligaciones legales.</p>
+      <h2>10. Conservación</h2>
+      <p>Los datos locales, incluido el año de nacimiento guardado, permanecen en tu dispositivo hasta que restableces o borras los datos de la aplicación o la desinstalas, sujeto al comportamiento del sistema operativo. Paco conserva <strong>dos copias rotatorias</strong> por cuenta: cada copia nueva sustituye a la más antigua de las dos, por lo que no se mantiene ningún historial adicional. Los datos de la cuenta y las copias en la nube se conservan mientras exista la cuenta; <strong>eliminar la cuenta Paco borra el registro de la cuenta y sus copias en la nube</strong>, salvo aquello que debamos conservar para cumplir una obligación legal o para formular, ejercer o defender reclamaciones.</p>
+      <p>Los datos de Firebase Analytics se conservan durante los periodos configurados en la propiedad de Google Analytics vinculada: <strong>los datos de eventos durante 2 meses</strong> y <strong>los datos a nivel de usuario durante 14 meses</strong>, tras lo cual Google los elimina; los informes agregados pueden seguir disponibles más allá de esos periodos. Los datos publicitarios son tratados y conservados por Google conforme a sus propias políticas y periodos de conservación; Paco no los conserva. El historial de compras y los registros de facturación de la tienda son conservados por Apple o Google según sus propias políticas y obligaciones legales.</p>
 
-      <h2>10. Eliminación de cuenta, datos en la nube y suscripciones</h2>
+      <h2>11. Eliminación de cuenta, datos en la nube y suscripciones</h2>
       <p>Puedes solicitar la eliminación dentro de Paco desde los ajustes de la cuenta. También puedes utilizar la página pública:</p>
       <p><a href="paco-delete-account.html">Abrir la página de eliminación de la cuenta Paco</a></p>
       <p>La eliminación de la cuenta Paco pretende borrar la cuenta de autenticación de Paco y los datos de copia de seguridad asociados. Los datos guardados únicamente en el dispositivo permanecen hasta que borres/restablezcas los datos de la aplicación o la desinstales.</p>
       <p><strong>Eliminar la cuenta Paco no cancela automáticamente una suscripción de App Store o Google Play y no genera por sí mismo un reembolso.</strong> Las suscripciones y la facturación deben gestionarse mediante la cuenta/tienda correspondiente de Apple o Google.</p>
 
-      <h2>11. Tus derechos de privacidad</h2>
+      <h2>12. Tus derechos de privacidad</h2>
       <p>Dependiendo de tu ubicación, puedes tener derecho a acceder, corregir, eliminar, limitar u oponerte a determinados tratamientos, solicitar portabilidad, retirar el consentimiento u optar por no participar en determinadas formas de venta/compartición publicitaria o publicidad dirigida. Puedes modificar las opciones disponibles de Analytics y publicidad en los ajustes de Paco y puedes contactarnos para solicitudes de privacidad.</p>
       <p>La retirada del consentimiento no afecta al tratamiento que fuera lícito antes de la retirada. También puedes tener derecho a presentar una reclamación ante la autoridad de protección de datos competente.</p>
 
-      <h2>12. Menores</h2>
-      <p>Paco es una aplicación educativa y no está dirigida específicamente a niños. Quienes no puedan consentir legalmente los tratamientos o compras pertinentes deben utilizar la aplicación únicamente con autorización de un progenitor o tutor legal. Si crees que se ha proporcionado información personal sin la autorización necesaria, contáctanos para que podamos revisar la situación.</p>
+      <h2>13. Menores</h2>
+      <p>Paco es una aplicación de aprendizaje de idiomas utilizada por personas de distintas edades, <strong>incluidos niños</strong>: los públicos declarados en Google Play empiezan a los 6 años. Es por tanto una aplicación de público mixto, no una aplicación dirigida exclusivamente a niños.</p>
+      <p><strong>Paco no crea cuentas, copias de seguridad en la nube ni perfiles de análisis para los usuarios menores de 18 años.</strong> Como se describe en la sección 2, para esos usuarios la aplicación funciona por completo en el dispositivo: no se crea ninguna cuenta, ni siquiera anónima, la copia de seguridad en la nube no está disponible y no se recoge ningún dato de análisis. El año de nacimiento utilizado para determinar la franja se guarda únicamente en el dispositivo y nunca sale de él; y cuando la franja proviene de la Declared Age Range de Apple, no se guarda absolutamente nada.</p>
+      <p><strong>La publicidad es la única excepción, y lo decimos con claridad.</strong> A los usuarios más jóvenes se les muestran anuncios, y para servirlos la tecnología publicitaria de Google trata un conjunto limitado de datos descritos en la sección 1 &mdash; normalmente la dirección IP, los anuncios vistos y las interacciones con ellos, e información técnica y de diagnóstico &mdash; para publicidad contextual, medición, seguridad y prevención del fraude. Lo que eliminan las protecciones descritas en la sección 6 es la publicidad personalizada, el remarketing y, para los menores de 13 años, el uso del identificador publicitario del dispositivo. No hacen invisible la solicitud de anuncios en sí.</p>
+      <p>Cuando la legislación local exija la autorización de un progenitor o tutor legal para compras, suscripciones u otras actividades, dicha autorización debe obtenerse antes de continuar. Si crees que se ha proporcionado información personal sin la autorización necesaria, contáctanos para que podamos revisar la situación.</p>
 
-      <h2>13. Cambios</h2>
+      <h2>14. Cambios</h2>
       <p>Esta política puede actualizarse cuando cambien las funciones, las plataformas compatibles, los proveedores de servicios o las prácticas de datos de Paco. La fecha indicada al inicio se actualizará en consecuencia.</p>
 
-      <h2>14. Contacto y responsable</h2>
-      <p>Para los tratamientos realizados directamente por Paco, el responsable del tratamiento es <strong>Francesco Margutti</strong>, desarrollador de Paco.</p>
+      <h2>15. Contacto y responsable</h2>
+      <p>Para los tratamientos realizados directamente por Paco, el responsable del tratamiento es <strong>Francesco Margutti</strong>, desarrollador de Paco, Via Ca' Polverin 143, 31032 Casale sul Sile (Treviso), Italia.</p>
       <p>Correo de privacidad/soporte: <a href="mailto:pacoapp.support@gmail.com">pacoapp.support@gmail.com</a></p>
     </section>
 
