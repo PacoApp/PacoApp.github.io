@@ -1056,6 +1056,29 @@ footer{
     return TESTI[n] ? n : 'en';
   }
 
+  /* Da dove arriva chi scarica. Il link messo in un profilo o in una mail
+     porta un'etichetta (?da=tiktok), e qui passa ai due pulsanti degli store:
+     App Store Connect conta i download per etichetta (Analisi → Acquisizione
+     → Campagne), Google Play per utm_source e utm_campaign. Senza etichetta
+     vale «sito». La pagina non salva e non manda niente: l'etichetta la
+     leggono Apple e Google, dentro i loro store. Il codice fornitore di Apple
+     e' uno per tutte le etichette (il numero dopo pt= in un link generato in
+     App Store Connect): finche' manca, il pulsante di Apple resta com'era. */
+  var FORNITORE_APPLE = '129216679';
+  var APP_STORE = 'https://apps.apple.com/app/id6794297622';
+  var GOOGLE_PLAY = 'https://play.google.com/store/apps/details?id=com.pacoapp.languages';
+  var trovata = /[?&]da=([A-Za-z0-9-]{1,30})(?:&|$)/.exec(location.search);
+  var etichetta = trovata ? trovata[1].toLowerCase() : 'sito';
+  if (/^[0-9]+$/.test(FORNITORE_APPLE)) {
+    document.querySelectorAll('a[href="' + APP_STORE + '"]').forEach(function(a){
+      a.href = APP_STORE + '?pt=' + FORNITORE_APPLE + '&ct=' + etichetta + '&mt=8';
+    });
+  }
+  document.querySelectorAll('a[href="' + GOOGLE_PLAY + '"]').forEach(function(a){
+    a.href = GOOGLE_PLAY + '&referrer=' + encodeURIComponent(
+      'utm_source=' + etichetta + '&utm_medium=sito&utm_campaign=' + etichetta);
+  });
+
   document.querySelectorAll('.lingue button').forEach(function(b){
     b.addEventListener('click', function(){ applica(b.getAttribute('data-lingua')); });
   });
